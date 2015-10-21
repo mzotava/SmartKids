@@ -1,87 +1,163 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$back-color: #fff;
+$second-color: rgba(212, 156, 126, 0.76);
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 .browsehappy {
   margin: 0.2em 0;
-  background: #ccc;
+  background: $back-color;
   color: #000;
   padding: 0.2em 0;
 }
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-body {
+html, body, .container {
+  height: 100%;
   padding: 0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+body {
+  // background: url('../img/back.jpg');
+  padding: 0;
+  font-family: 'Neucha', cursive;
+}
+header{
+  height: 15vh;
+  background-color: #fff;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
+.carousel{
+  width: 100%;
+  height: auto;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .carousel-indicators li {
+    &.active{
+        width: 16px;
+    height: 16px;
+    }
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+    width: 14px;
+    height: 14px;
+  }
+  .item {
+    -webkit-transition: transform 0.3s ease-in-out ;
+    -moz-transition: transform 0.3s ease-in-out ;
+    -o-transition: transform 0.3s ease-in-out ;
+    transition: transform 0.3s ease-in-out ;
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+.links{
+  margin-bottom: 5rem;
+  .icon{
+    height: 10rem;
+    width: 10rem;
+    margin-top: 5rem;
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
+    &.lang{
+      background: url("../img/language-icon.png");
+      background-size: 105%;
+    }
+    &.science{
+      background: url("../img/lab-test.png");
+      background-size: 100%;
+    }
+    &.art{
+      background: url("../img/art.png");
+      background-size: 100%;
+    }
+    &.games{
+      background: url("../img/game.png") 1px 0px;
+      background-size: 98%;
+    }
   }
-}
+  p {
+    text-align: justify;
+    font-size: 2rem;
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
+}
+
+
+
+
+  .image{
+    img{
+      max-height:100%;
+    }
+  }
+
+  .about_bg{
+    padding: 155px 0;
+    background-image: url(../img/1.jpg);
+    color: #fff;
+  }
+
+  .stretch {
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .shortcode_button {
+      display:inline-block;
+      margin:0 10px 10px 0;
+      text-decoration:none;
+      border:1px #f64747 solid;
+      background-color:#f64747;
+      color:#ffffff;
+      transition: all 300ms;
+      -webkit-transition: all 300ms;
+      line-height:21px;
+      font-size:14px;
+      padding:6px 20px;
+      font-weight:400;
+      text-transform:none;
+      vertical-align:top;
+      text-align:center;
+      border-radius:3px;
+      -webkit-border-radius:3px;
+    }
+    .shortcode_button:hover {
+      background-color:transparent;
+      color:#2d2e2e;
+      border-color:#2d2e2e;
+    }
+  }
+
+  .content {
+
+    .block1 {
+      background: red;
+    }
+    .block1, .block2 {
+      //    display: inline-block;
+    }
+    .block3 {
+      background: blue;
+    }
+    .block4 {
+      background: green;
+    }
+  }
+
+  /* Custom page footer */
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+    .container {
+      height: 100px;
+    }
+    margin-top: 20px;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
+
+
+
