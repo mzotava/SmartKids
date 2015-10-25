@@ -1,8 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 $back-color: #fff;
 $second-color: rgba(212, 156, 126, 0.76);
+@import "header";
+@import "footer";
+@import "responsive";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browsehappy {
@@ -11,6 +15,7 @@ $second-color: rgba(212, 156, 126, 0.76);
   color: #000;
   padding: 0.2em 0;
 }
+
 .row {
   margin-left: 0px;
   margin-right: 0px;
@@ -26,55 +31,59 @@ body {
   padding: 0;
   font-family: 'Neucha', cursive;
 }
-header{
-  height: 15vh;
+
+header {
   background-color: #fff;
+  .fix-to-top {
+    position: fixed;
+    top: 0;
+  }
 }
 
-.carousel{
+.carousel {
   width: 100%;
   height: auto;
-  img{
+  img {
     width: 100%;
     height: auto;
   }
   .carousel-indicators li {
-    &.active{
-        width: 16px;
-    height: 16px;
+    &.active {
+      width: 16px;
+      height: 16px;
     }
 
     width: 14px;
     height: 14px;
   }
   .item {
-    -webkit-transition: transform 0.3s ease-in-out ;
-    -moz-transition: transform 0.3s ease-in-out ;
-    -o-transition: transform 0.3s ease-in-out ;
-    transition: transform 0.3s ease-in-out ;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
 }
 
-.links{
+.links {
   margin-bottom: 5rem;
-  .icon{
+  .icon {
     height: 10rem;
     width: 10rem;
     margin-top: 5rem;
 
-    &.lang{
+    &.lang {
       background: url("../img/language-icon.png");
       background-size: 105%;
     }
-    &.science{
+    &.science {
       background: url("../img/lab-test.png");
       background-size: 100%;
     }
-    &.art{
+    &.art {
       background: url("../img/art.png");
       background-size: 100%;
     }
-    &.games{
+    &.games {
       background: url("../img/game.png") 1px 0px;
       background-size: 98%;
     }
@@ -87,77 +96,141 @@ header{
 
 }
 
-
-
-
-  .image{
-    img{
-      max-height:100%;
-    }
+.image {
+  img {
+    max-height: 100%;
   }
+}
 
-  .about_bg{
-    padding: 155px 0;
-    background-image: url(../img/1.jpg);
+.about_bg {
+  padding: 155px 0;
+  background-image: url(../img/1.jpg);
+  color: #fff;
+}
+
+.about_art {
+  padding: 155px 0;
+  background-image: url(../img/2.jpg);
+  color: #fff;
+}
+
+.about_science {
+  padding: 155px 0;
+  background-image: url(../img/3.jpg);
+  color: #fff;
+}
+
+.about_languages {
+  padding: 155px 0;
+  background-image: url(../img/4.jpg);
+  color: #fff;
+}
+
+.about_games {
+  padding: 155px 0;
+  background-image: url(../img/5.jpg);
+  color: #fff;
+}
+
+.stretch {
+  padding: 5em 0;
+
+  img {
+    width: 100%;
+    height: 230px;
+  }
+  .block {
+    h4 {
+      padding-top: 0.5em;
+      font-size: 3rem;
+      border-bottom: 3px solid #fff;
+      padding-bottom: 5px;
+    }
+    &.blue {
+      background-color: #6fc4d9;
+      box-shadow: 0px 4px 0px 0px #6fc4d9;
+    }
+
+    &.green {
+      background-color: #6ab78a;
+      box-shadow: 0px 4px 0px 0px #6ab78a;
+    }
+
+    &.purple {
+      background-color: #ac7ab5;
+      box-shadow: 0px 4px 0px 0px #ac7ab5;
+    }
+
+    &.red {
+      background-color: #c86969;
+      box-shadow: 0px 4px 0px 0px #c86969;
+    }
+
+    &.yellow {
+      background-color: #e0b84e;
+      box-shadow: 0px 4px 0px 0px #e0b84e;
+    }
     color: #fff;
+    padding: 0px 15px 5px 15px;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    //position: absolute;
+    //top: 0;
+    @media (max-width: 992px) {
+      position: relative;
+      margin-bottom: 1em;
+    }
+    .image {
+      height: 250px;
+    }
+
   }
-
-  .stretch {
-    background-position: center center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    .shortcode_button {
-      display:inline-block;
-      margin:0 10px 10px 0;
-      text-decoration:none;
-      border:1px #f64747 solid;
-      background-color:#f64747;
-      color:#ffffff;
-      transition: all 300ms;
-      -webkit-transition: all 300ms;
-      line-height:21px;
-      font-size:14px;
-      padding:6px 20px;
-      font-weight:400;
-      text-transform:none;
-      vertical-align:top;
-      text-align:center;
-      border-radius:3px;
-      -webkit-border-radius:3px;
-    }
-    .shortcode_button:hover {
-      background-color:transparent;
-      color:#2d2e2e;
-      border-color:#2d2e2e;
-    }
+  p {
+    font-size: 2rem;
   }
-
-  .content {
-
-    .block1 {
-      background: red;
-    }
-    .block1, .block2 {
-      //    display: inline-block;
-    }
-    .block3 {
-      background: blue;
-    }
-    .block4 {
-      background: green;
-    }
+  .devider {
+    width: 100%;
+    height: 23px;
+    background: url('../img/devider.png') no-repeat center center;
+    margin: 5px 0 10px;
   }
-
-  /* Custom page footer */
-  .footer {
-    .container {
-      height: 100px;
-    }
-    margin-top: 20px;
+  .text-center p {
+    text-align: center;
   }
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .shortcode_button {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border: 1px #f64747 solid;
+    background-color: #f64747;
+    color: #ffffff;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    line-height: 21px;
+    font-size: 14px;
+    padding: 6px 20px;
+    font-weight: 400;
+    text-transform: none;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+  .shortcode_button:hover {
+    background-color: #FB6666;
+    border-color: #2d2e2e;
+  }
+}
+
+/* Custom page footer */
+
+
 
 
 

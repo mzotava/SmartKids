@@ -25,7 +25,17 @@
 
   </div>
 
-    <div class="stretch links">
+  <div id="#about" class="stretch links">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>О НАС</h2>
+
+          <div class="devider"></div>
+          <p class="subtitle">ЗДЕСЬ ВЫ МОЖЕТЕ НАЙТИ</p>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
 
@@ -66,45 +76,202 @@
             ea commodo consequat.</p>
         </div>
 
-
-
       </div>
     </div>
   </div>
-
 
   <div class="stretch about_bg">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2><span>We Will Take</span> Care of Your Kids</h2>
+          <h2><span>Мы Думаем о Будущем</span> Наших Детей</h2>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-          <a href="javascript:void(0);" class="shortcode_button">Learn More</a>
+          <p>
+            Наш образовательно-развлекательный портал содержит в себе очень большой объем интересной и полезной
+            информации.
+            Наши редакторы потоянно следят за ее актуальностью.
+            Также здесь можно найти много увлекательных игр, которые помогут не только весело провести время,
+            но научиться чему-нибудь новому.
+          </p>
+          <a href="#/about" class="shortcode_button">Узнать Больше</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ТВОРЧЕСТВО-->
+
+  <div id="#art" class="stretch stickers">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>ТВОРЧЕСТВО</h2>
+
+          <div class="devider"></div>
+          <p class="subtitle">ЧЕМ ЗАНЯТЬСЯ</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="art in arts | limitTo:6">
+          <div ng-class=art.class>
+            <img src={{art.image}} ng-show='!!(art.image)'/>
+            <h4>{{art.header}}</h4>
+
+            <p>{{art.text}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stretch about_art">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Творчество Создает Новые Идеи и Ценности Ребенка</h2>
+
+          <p>
+            Это одна из форм самостоятельной деятельности ребёнка, в процессе которой
+            он отступает от привычных и знакомых ему способов проявления окружающего мира,
+            экспериментирует и создаёт нечто новое для себя и других.
+          </p>
+          <a href="#/about" class="shortcode_button">Больше творчества</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--НАУКИ-->
+
+  <div id="#science" class="stretch stickers">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>НАУКИ</h2>
+
+          <div class="devider"></div>
+          <p class="subtitle">УЗНАТЬ НОВОЕ</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="science in sciences | limitTo:6">
+          <div ng-class=science.class>
+            <img src={{science.image}} ng-show='!!(science.image)'/>
+            <h4>{{science.header}}</h4>
+
+            <p>{{science.text}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stretch about_science">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Наука Может Быть Очень Веселой!</h2>
+
+          <p>
+            Занимательные лабораторные опыты, интересные факты, Совместные исследования и многое другое не оставят
+            никого равнодушным к той или иной сфере науки.
+          </p>
+          <a href="#/about" class="shortcode_button">Больше науки</a>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-6 block1">
-        block1
-      </div>
-      <div class="col-md-6 block2">
-        <div class="col-md-12 block3">
-          block2
-        </div>
-        <div class="col-md-12 block4">
-          block3
-        </div>
-      </div>
+  <!--ЯЗЫКИ-->
 
+  <div id="#languages" class="stretch stickers">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>ЯЗЫКИ</h2>
+
+          <div class="devider"></div>
+          <p class="subtitle">УЧИМСЯ ГОВОРИТЬ</p>
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="language in languages | limitTo:6">
+          <div ng-class=language.class>
+            <img src={{language.image}} ng-show='!!(language.image)'/>
+            <h4>{{language.header}}</h4>
 
+            <p>{{language.text}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div class="stretch about_languages">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Можно Говорить Со Всеми На Планете!</h2>
+
+          <p>
+            Развитие языковых способностей в раннем возрасте несомненно укрепит их в будущем.
+            Английский, Немецкий, Французский и многие другие языки.
+          </p>
+          <a href="#/about" class="shortcode_button">Больше языков</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ИГРЫ-->
+
+  <div id="#games" class="stretch stickers">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>ИГРЫ</h2>
+
+          <div class="devider"></div>
+          <p class="subtitle">ВЕСЕЛО ПРОВОДИМ ВРЕМЯ</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6" ng-repeat="game in games | limitTo:6">
+          <div ng-class=game.class>
+            <img src={{game.image}} ng-show='!!(game.image)'/>
+            <h4>{{game.header}}</h4>
+
+            <p>{{game.text}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="stretch about_games">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Игры Являются Неотъемлемой Частью Детского Развития</h2>
+
+          <p>
+            Это не только приятное времяпрепровождение, но и разностороннее развитие ребенка.
+            Каждый найдет для себя свой жанр и сможет отдохнуть после изучения одного из разделов.
+          </p>
+          <a href="#/about" class="shortcode_button">Больше игр</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </div>

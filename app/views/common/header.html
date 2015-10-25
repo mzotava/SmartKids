@@ -1,20 +1,46 @@
-  <header>
-    <!--<div class="container">-->
-      <!--<div class="logo">-->
-        <!--<a href="index.html" title="Kids Life"><img src="img/logo.png" alt="Kids Life" title="Kids Life"></a>-->
-      <!--</div>-->
-      <!--<div class="contact-details">-->
-        <!--<p class="mail">-->
-          <!--<a href="#">contact@kidslife.com</a>-->
-          <!--<span class="fa fa-envelope"></span>-->
-        <!--</p>-->
-        <!--<p class="phone-no">-->
-          <!--<i>+1 959 552 5963</i>-->
-          <!--<span class="fa fa-phone"></span>-->
-        <!--</p>-->
-      <!--</div>-->
-    <!--</div>-->
+<header ng-controller="HeaderCtrl">
+  <div class="container">
+    <div class="logo">
+      <a href="index.html" title="Kids Life"><img src="img/logo.png" alt="Kids Life" title="Kids Life"></a>
+    </div>
+    <div class="contact-details">
+      <p class="mail">
+        <a href="#/">contact@smartkids.by</a>
+        <span class="fa fa-envelope"></span>
+      </p>
+      <p class="phone-no">
+        <i>+375 44 740 26 91</i>
+        <span class="fa fa-phone"></span>
+      </p>
+    </div>
+  </div>
+  <!--menu-container starts-->
+  <div class="sticky-wrapper menu-container-sticky-wrapper" style="height: 70px;"><div class="menu-container" set-class-when-at-top="fix-to-top">
+    <div class="container">
+      <!--nav starts-->
+      <nav class="main-menu">
+        <div ng-click="toggleMenu()" class="dt-menu-toggle" >Меню<span class="dt-menu-toggle-icon dt-menu-toggle"></span></div>
+        <ul  class="menu menu-main-menu">
+          <li class="current_page_item menu-item-simple-parent menu-item-depth-0 red hasSubmenu"> <a href="index.html#/"> Главная </a>
+          </li>
+          <li class="mustard"> <a ng-href="#about" ng-click="goto($event)"> О нас </a> </li>
+          <li class="green"><a ng-href="#art" ng-click="goto($event)"> Творчество </a></li>
+          <li class="yellow"> <a ng-href="#science" ng-click="goto($event)"> Науки </a> </li>
+          <li class="blue"> <a ng-href="#languages" ng-click="goto($event)"> Языки </a> </li>
+          <li class="purple"><a ng-href="#games" ng-click="goto($event)"> Игры </a></li>
+          <li class="pink"><a ng-href="#other" ng-click="goto($event)"> Разное </a></li>
+        </ul>
+      </nav>
+      <!--nav ends-->
 
-
-  </header>
+      <ul class="dt-sc-social-icons">
+        <li><a href="#/" class="dt-sc-tooltip-top facebook fa fa-facebook"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="#/" class="dt-sc-tooltip-top youtube fa fa-youtube"><span class="fa fa-youtube"></span></a></li>
+        <li><a href="#/" class="dt-sc-tooltip-top twitter fa fa-twitter"><span class="fa fa-twitter"></span></a></li>
+        <li><a href="#/" class="dt-sc-tooltip-top gplus fa fa-google-plus"><span class="fa fa-google-plus"></span></a></li>
+      </ul>
+    </div>
+  </div></div>
+  <!--menu-container ends-->
+</header>
 

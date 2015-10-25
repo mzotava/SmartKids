@@ -1,0 +1,34 @@
+footer {
+  .copyright .footer-links ul li, footer .class_hours ul.dt-sc-social-icons li {display: inline-block;}
+
+  .copyright{clear:both; float:left; width:100%; margin:0px; padding:15px 0px 10px; background:url(../img/footer_strip.jpg) center top repeat-x #008c99;  margin-top: 5em;}
+
+  .copyright p{float:left; color:#FFF;}
+
+  .copyright p a{color:#FFF;}
+
+  .copyright .footer-links{float:right; margin:0px; padding:0px;}
+
+  .copyright .footer-links ul, .class_hours ul.dt-sc-social-icons{margin:0px; padding:0px; float:left;}
+
+  .copyright .footer-links ul li, .class_hours ul.dt-sc-social-icons li{margin:0px 8px 0px 0px;}
+
+  .copyright .footer-links ul li:last-child, .class_hours ul.dt-sc-social-icons li:last-child{margin:0px;}
+
+  .copyright .footer-links ul li a,  .class_hours ul.dt-sc-social-icons li a{width:35px; height:35px; display:block; line-height:40px; text-align:center; padding:0px;}
+
+  .copyright .footer-links ul li.facebook:hover a, .class_hours ul.dt-sc-social-icons li.facebook a{background:#3c5b9b;}
+
+  .copyright .footer-links ul li.twitter:hover a, .class_hours ul.dt-sc-social-icons li.twitter a{background:#2caae1;}
+
+  .copyright .footer-links ul li.gplus:hover a, .class_hours ul.dt-sc-social-icons li.gplus a{background:#ba3526;}
+
+  .copyright .footer-links ul li.pinterest:hover a, .class_hours ul.dt-sc-social-icons li.pinterest a{background:#ca1325;}
+
+  footer .footer-links p{float:left; background:url(../img/footer_arrow.png) right 7px no-repeat; padding:0px 50px 0px 0px; margin:7px 15px 0px 0px;}
+
+  .copyright .copyright-info{margin:0px; line-height:35px;}
+
+  .back-to-top{position:fixed; bottom:8px; right:8px; width:42px; height:43px; line-height:43px; background:url(../img/go_to_top.png) no-repeat; font-size:10px; text-indent:-9999px; text-align:center; display:none; z-index:9999;}
+
+}
