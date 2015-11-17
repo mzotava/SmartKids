@@ -1,0 +1,36 @@
+<div class="content category">
+
+  <div  class="stretch links">
+    <div class="page-header-wrapper">
+      <div class="container">
+        <div class="text-center row ">
+          <h2>{{categoryName  | translate | uppercase}}</h2>
+
+          <div class="devider"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div  class="stretch stickers">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="categoryItem in categoryItems ">
+          <div ng-class=categoryItem.class>
+            <img src={{categoryItem.image}} ng-show='!!(categoryItem.image)'/>
+            <h4>{{categoryItem.header}}</h4>
+
+            <p>{{categoryItem.text}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>

@@ -13,7 +13,8 @@ angular
     'ngAnimate',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'pascalprecht.translate'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -22,33 +23,14 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/art', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
+      .when('/category/:categoryName', {
+        templateUrl: 'views/category.html',
+        controller: 'CategoryCtrl',
+        controllerAs: 'category'
       })
-      .when('/science', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/languages', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/games', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/other', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/aboutNew', {
-        templateUrl: 'views/main.html',
+
+      .when('/about', {
+        templateUrl: 'views/about.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
       })

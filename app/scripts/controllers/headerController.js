@@ -7,8 +7,8 @@
  * Controller of the smartKidsApp
  */
 angular.module('smartKidsApp')
-  .controller('HeaderCtrl', ['$scope', '$location', '$anchorScroll',
-    function ($scope, $location, $anchorScroll) {
+  .controller('HeaderCtrl', ['$scope', '$location', '$anchorScroll', '$route',
+    function ($scope, $location, $anchorScroll, $route) {
       console.log('headerCtrl init');
 
 
@@ -20,12 +20,12 @@ angular.module('smartKidsApp')
         });
       };
 
-      $scope.goto = function ($event) {
-
-        $location.hash($event.toElement.hash);
-        $anchorScroll();
-        $event.preventDefault();
-      };
+      //$scope.goto = function ($event) {
+      //
+      //  $location.hash($event.toElement.hash);
+      //  $anchorScroll();
+      //  $event.preventDefault();
+      //};
 
     }]);
 
