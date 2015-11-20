@@ -21,28 +21,28 @@ angular.module('smartKidsApp')
       $scope.arts = [
         {
           'id': 1,
-          'class': 'block blue',
+          'class': 'blue',
           'header': 'Header1',
           'text': ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           'image': 'img/art1.jpg'
         },
         {
           'id': 2,
-          'class': 'block yellow',
+          'class': 'yellow',
           'header': 'Header1',
           'text': ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           'image': 'img/art1.jpg'
         },
         {
           'id': 3,
-          'class': 'block green',
+          'class': 'green',
           'header': 'Header1',
           'text': ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           'image': 'img/art2.jpg'
         },
         {
           'id': 4,
-          'class': 'block purple',
+          'class': 'purple',
           'header': 'Header1',
           'text': ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
           'image': 'img/art1.jpg'

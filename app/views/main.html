@@ -115,7 +115,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="art in arts | limitTo:6">
-          <div ng-class=art.class>
+          <div class="block" ng-class=art.class>
             <img src={{art.image}} ng-show='!!(art.image)'/>
             <h4>{{art.header}}</h4>
 
@@ -159,7 +159,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="science in sciences | limitTo:6">
-          <div ng-class=science.class>
+          <div class="block" ng-class=science.class>
             <img src={{science.image}} ng-show='!!(science.image)'/>
             <h4>{{science.header}}</h4>
 
@@ -203,7 +203,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="language in languages | limitTo:6">
-          <div ng-class=language.class>
+          <div class="block" ng-class=language.class>
             <img src={{language.image}} ng-show='!!(language.image)'/>
             <h4>{{language.header}}</h4>
 
@@ -246,7 +246,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6" ng-repeat="game in games | limitTo:6">
-          <div ng-class=game.class>
+          <div class="block" ng-class=game.class>
             <img src={{game.image}} ng-show='!!(game.image)'/>
             <h4>{{game.header}}</h4>
 

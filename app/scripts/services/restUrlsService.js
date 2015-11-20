@@ -4,7 +4,7 @@ angular.module('smartKidsApp').factory('restUrlsService', [ function restUrlsSer
     /**
      * Must contain trailing slash in the end!
      */
-    this.appPrefix = 'http://localhost:9000/';
+    this.appPrefix = 'http://localhost:3000/';
 
     return {
 
