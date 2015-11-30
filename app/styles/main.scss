@@ -97,6 +97,40 @@ header {
 
 }
 
+.editItem{
+  color: #009860;
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 150rem;
+  display: block;
+  position: relative;
+  min-height: 80rem;
+  padding-left: 20%;
+
+
+  .buttons{
+    padding-left: 0;
+  }
+
+  .btn{
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    margin: 1rem 1rem 0 0;
+    width: 15rem;
+  }
+
+  .form-group{
+
+  }
+
+  .form-control{
+    margin: 0 0 3rem 0;
+    height: 5rem;
+    font-size: 2rem;
+
+  }
+}
+
 .image {
   img {
     max-height: 100%;

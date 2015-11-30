@@ -1,0 +1,86 @@
+<div class="row ">
+  <div class="col-md-12">
+
+    <form class="form editItem" name="itemForm" role="form">
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12 control-label">Категория</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <select type="text" class="form-control "
+                  ng-options=" category.name for category in categories"
+                  ng-model="item.category" name="category"
+                  required="">
+            <option></option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12 control-label">Цвет</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <select type="text" class="form-control "
+                  ng-options=" color.name for color in colors"
+                  ng-model="item.color" name="color"
+                  required="">
+            <option></option>
+          </select>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12 control-label">Картинка</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <input type="text" class="form-control"  name="image"
+                 ng-model="item.image"/>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12 control-label">Заголовок</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <input type="text" class="form-control"  name="header"
+                 ng-model="item.header"/>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12 control-label">Краткое описание</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <input type="text" class="form-control"  name="description"
+                  ng-model="item.description"/>
+
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-12 col-xs-12  control-label">Содержание</label>
+
+        <div class="col-xs-10 col-sm-10 col-md-6">
+                    <textarea type="text" class="form-control"
+                              ng-required='true' name='content' rows="10" ng-model="item.content">
+                    </textarea>
+        </div>
+      </div>
+
+      <div class="form-group col-md-12 buttons">
+        <div class="col-xs-10 col-sm-10 col-md-6 ">
+          <button type='submit' ng-click="saveItem()" class="btn btn-success ">
+            Сохранить
+          <button type='reset' ng-click="cancel()" class="btn btn-danger">
+            Отмена
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

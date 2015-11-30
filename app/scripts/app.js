@@ -34,6 +34,12 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+
+      .when('/item', {
+        templateUrl: 'views/newItem.html',
+        controller: 'crudItemCtrl',
+        controllerAs: 'crudItemCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
