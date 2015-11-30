@@ -175,6 +175,7 @@ header {
     height: 230px;
   }
   .block {
+    cursor: pointer;
     h4 {
       padding-top: 0.5em;
       font-size: 3rem;
@@ -262,10 +263,14 @@ header {
     border-color: #2d2e2e;
   }
 }
-
-/* Custom page footer */
-
-
-
+.stretch.item{
+  .text-center {
+    text-align: center;
+    padding-top: 10em;
+  }
+   img{
+     height: 100%;
+   }
+ }
 
 

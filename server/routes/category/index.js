@@ -9,16 +9,13 @@ var CategoryItem = db.category;
  */
 
 exports.getCategoryItems = function(req, res){
-  var body = req.body;
   var categoryName = req.params.categoryName;
-  var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+
   CategoryItem.find({'categoryName': categoryName}, function(err, items){
     if (err) {
 
-      // Nice log message on your end, so that you can see what happened
       console.log('Couldn\'t get items  with type ' + color.red(categoryName) + ' because of: ' + err);
 
-      // send the error
       res.status(500).json({
         'message': 'Internal server error. Please contact margaritaa.zotova@gmail.com.'
       });
@@ -59,24 +56,23 @@ exports.addItem = function(req, res){
   });
 };
 
+exports.getItem = function(req, res){
+
+  CategoryItem.findById(req.params.itemId, function (err, item) {
+    if (!item) {
+      res.statusCode = 404;
+      return res.send({error: 'Not found'});
+    }
+    if (!err) {
+      return res.send({status: 'OK', item: item});
+    } else {
+      res.statusCode = 500;
+      console.log.error('Internal error(%d): %s', res.statusCode, err.message);
+      return res.send({error: 'Server error'});
+    }
+  })
+};
+
 exports.editItem = function(req, res){
-  var body = req.body;
-  var itemId = req.params.itemId;
-  //var time = moment().format('MMMM Do YYYY, h:mm:ss a');
-  //Category.find({'categoryName': categoryName}, function(err, items){
-  //  if (err) {
-  //
-  //    // Nice log message on your end, so that you can see what happened
-  //    console.log('Couldn\'t get items  with type ' + color.red(categoryName) + ' because of: ' + err);
-  //
-  //    // send the error
-  //    res.status(500).json({
-  //      'message': 'Internal server error. Please contact margaritaa.zotova@gmail.com.'
-  //    });
-  //  }
-  //  if (items) {
-  //    res.status(200).json(items);
-  //  }
-  //
-  //});
+
 };

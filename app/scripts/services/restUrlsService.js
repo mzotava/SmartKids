@@ -15,7 +15,7 @@ angular.module('smartKidsApp').factory('restUrlsService', [function restUrlsServ
 
     items: this.appPrefix + 'items',
 
-    tenant: this.appPrefix + 'items/{item_id}'
+    item: this.appPrefix + 'items/{item_id}'
 
 
   };

@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-6 col-sm-2" ng-repeat="categoryItem in categoryItems ">
-          <div class="block" ng-class=categoryItem.color>
+          <div class="block" ng-click="selectItem(categoryItem._id)" ng-class=categoryItem.color>
             <img src={{categoryItem.image}} ng-show='!!(categoryItem.image)'/>
             <h4>{{categoryItem.header}}</h4>
 

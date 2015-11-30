@@ -40,6 +40,12 @@ angular
         controller: 'crudItemCtrl',
         controllerAs: 'crudItemCtrl'
       })
+
+      .when('/item/:itemId', {
+        templateUrl: 'views/item.html',
+        controller: 'itemCtrl',
+        controllerAs: 'itemCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

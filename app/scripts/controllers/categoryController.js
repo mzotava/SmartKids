@@ -17,5 +17,9 @@ angular.module('smartKidsApp')
           $scope.categoryItems = data;
         });
 
+      $scope.selectItem = function(id){
+        $location.path('/item/' + id);
+      }
+
     }]);
 

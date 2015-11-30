@@ -34,8 +34,10 @@ app.configure('production', function(){
 
 // Routes
 app.get('/category/:categoryName', category.getCategoryItems);
-app.post('/items', category.addItem);
 app.put('/items/:itemId', category.editItem);
+app.get('/items/:itemId', category.getItem);
+app.post('/items', category.addItem);
+
 
 
 app.listen(3000, function(){

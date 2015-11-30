@@ -8,8 +8,8 @@
  * Controller of the smartKidsApp
  */
 angular.module('smartKidsApp')
-  .controller('MainCtrl', ['$scope', 'categoryService',
-    function ($scope, categoryService) {
+  .controller('MainCtrl', ['$scope', '$location', 'categoryService',
+    function ($scope, $location, categoryService) {
       var blockHeight =  angular.element(".block").height();
       var containerHeight =  angular.element(".stickers.container").height();
       var blockAmount = angular.element(".block").length;
@@ -33,6 +33,9 @@ angular.module('smartKidsApp')
         $scope.games = data;
       });
 
+      $scope.selectItem = function(id){
+        $location.path('/item/' + id);
+      }
 
 
     }]);
