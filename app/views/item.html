@@ -3,11 +3,18 @@
   <div  class="stretch item">
     <div class="page-header-wrapper">
       <div class="container">
+
+
         <div class="text-center row ">
           <h2>{{item.header}}</h2>
 
           <div class="devider"></div>
-          <p class="subtitle">{{item.categoryName}}</p>
+          <div class="rating">
+            <uib-rating ng-model="rate" ng-change="saveRating()" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"
+                        titles="['Очень скучно','Скучно','Нормально','Интересно', 'Очень интересно']" aria-labelledby="default-rating">
+
+            </uib-rating>
+          </div>
         </div>
       </div>
     </div>

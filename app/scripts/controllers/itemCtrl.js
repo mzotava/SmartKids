@@ -17,5 +17,18 @@ angular.module('smartKidsApp')
         $scope.item = data.item;
       });
 
+      $scope.rate = $scope.item.rate || 0;
+      $scope.max = 5;
+      $scope.isReadonly = false;
+
+      $scope.saveRating = function(){
+        $scope.isReadonly = true;
+        $scope.item.rate = $scope.rate;
+
+        categoryService.editItem($scope.itemId, $scope.item).success(function () { });
+
+      };
+
+
     }]);
 

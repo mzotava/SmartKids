@@ -21,6 +21,5 @@ angular.module('smartKidsApp').factory('categoryService', ['$http', 'restUrlsSer
     deleteItem: function (itemId) {
       return $http.delete(restUrlsService.item.replace('{item_id}', itemId));
     }
-
   };
 }]);
